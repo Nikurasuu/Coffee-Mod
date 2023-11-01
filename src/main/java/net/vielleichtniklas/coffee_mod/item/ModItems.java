@@ -1,4 +1,4 @@
-package net.vielleichtniklas.coffee_mod.items;
+package net.vielleichtniklas.coffee_mod.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;

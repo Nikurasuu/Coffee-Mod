@@ -1,4 +1,4 @@
-package net.vielleichtniklas.coffee_mod.items;
+package net.vielleichtniklas.coffee_mod.item;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.vielleichtniklas.coffee_mod.CoffeeMod;
+import net.vielleichtniklas.coffee_mod.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = 
@@ -19,6 +20,7 @@ public class ModCreativeModeTabs {
                 .displayItems((pParameters, pOutput) -> {
                     pOutput.accept(ModItems.COFFEE_BEANS.get());
                     pOutput.accept(ModItems.ROASTED_COFFEE_BEANS.get());
+                    pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                 })
                 .build());
 

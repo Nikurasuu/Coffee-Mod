@@ -12,8 +12,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.vielleichtniklas.coffee_mod.items.ModCreativeModeTabs;
-import net.vielleichtniklas.coffee_mod.items.ModItems;
+import net.vielleichtniklas.coffee_mod.block.ModBlocks;
+import net.vielleichtniklas.coffee_mod.item.ModCreativeModeTabs;
+import net.vielleichtniklas.coffee_mod.item.ModItems;
 
 import org.slf4j.Logger;
 
@@ -31,6 +32,8 @@ public class CoffeeMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModeTabs.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         ModItems.register(modEventBus);
 
